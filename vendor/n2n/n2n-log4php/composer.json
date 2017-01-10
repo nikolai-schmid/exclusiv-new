@@ -1,0 +1,19 @@
+{
+    "autoload": {
+        "psr-4": {
+            "n2n\\log4php\\": "src/app/n2n/log4php"
+        }
+    },
+    "description": "log4php for n2n",
+    "homepage": "http://n2n.rocks",
+    "keywords": [
+        "log4php",
+        "n2n"
+    ],
+    "license": "GNU LGPL",
+    "name": "n2n/n2n-log4php",
+    "require": {
+        "php": ">=7.0"
+    },
+    "type": "library"
+}

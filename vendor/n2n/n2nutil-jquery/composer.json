@@ -1,0 +1,27 @@
+{
+    "authors": [
+        {
+            "email": "guenther@hnm.ch",
+            "name": "Thomas G\u00fcnther"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "n2nutil\\jquery\\": "src/app/n2nutil/jquery"
+        }
+    },
+    "description": "jquery utils for n2n",
+    "homepage": "https://n2n.rocks/",
+    "keywords": [
+        "n2n",
+        "jquery"
+    ],
+    "license": "GNU LGPL",
+    "name": "n2n/n2nutil-jquery",
+    "require": {
+        "n2n/n2n-composer-module-installer": "~7.1.0",
+        "n2n/n2n-web": "^7.1.10",
+        "php": ">=7.0"
+    },
+    "type": "n2n-module"
+}

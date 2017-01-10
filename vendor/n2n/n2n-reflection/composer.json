@@ -1,0 +1,28 @@
+{
+    "authors": [
+        {
+            "email": "a@von-burg.net",
+            "homepage": "http://www.von-burg.net",
+            "name": "Andreas von Burg",
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "n2n\\reflection\\": "src/app/n2n/reflection"
+        }
+    },
+    "description": "n2n framework 7",
+    "homepage": "http://n2n.rocks/",
+    "keywords": [
+        "framework",
+        "awesome"
+    ],
+    "license": "GNU LGPL",
+    "name": "n2n/n2n-reflection",
+    "require": {
+        "n2n/n2n-util": "^7.1.10",
+        "php": ">=7.0"
+    },
+    "type": "library"
+}

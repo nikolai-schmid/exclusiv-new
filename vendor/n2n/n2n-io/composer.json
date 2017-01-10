@@ -1,0 +1,29 @@
+{
+    "authors": [
+        {
+            "email": "a@von-burg.net",
+            "homepage": "http://www.von-burg.net",
+            "name": "Andreas von Burg"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "n2n\\io\\": "src/app/n2n/io"
+        }
+    },
+    "description": "n2n io library",
+    "homepage": "http://n2n.rocks/",
+    "keywords": [
+        "n2n",
+        "framework",
+        "io"
+    ],
+    "license": "GNU LGPL",
+    "name": "n2n/n2n-io",
+    "require": {
+        "n2n/n2n-reflection": "^7.1.10",
+        "n2n/n2n-util": "^7.1.10",
+        "php": ">=7.0"
+    },
+    "type": "library"
+}

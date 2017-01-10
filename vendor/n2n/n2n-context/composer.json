@@ -1,0 +1,32 @@
+{
+    "authors": [
+        {
+            "email": "a@von-burg.net",
+            "homepage": "http://www.von-burg.net",
+            "name": "Andreas von Burg"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "n2n\\context\\": "src/app/n2n/context"
+        }
+    },
+    "description": "Context support (request, session and application scope) for n2n framework. ",
+    "homepage": "http://n2n.rocks/",
+    "keywords": [
+        "n2n",
+        "context",
+        "scope",
+        "request scope",
+        "session scope",
+        "application scope"
+    ],
+    "license": "GNU LGPL",
+    "name": "n2n/n2n-context",
+    "require": {
+        "n2n/n2n-reflection": "^7.1.10",
+        "n2n/n2n-util": "^7.1.10",
+        "php": ">=7.0"
+    },
+    "type": "library"
+}

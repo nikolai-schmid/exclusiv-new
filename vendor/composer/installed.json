@@ -1,0 +1,997 @@
+[
+    {
+        "name": "n2n/n2n-composer-module-installer",
+        "version": "v7.1.0",
+        "version_normalized": "7.1.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/n2n/n2n-composer-module-installer.git",
+            "reference": "6783fafa2289acc2b46e82fff5b71b4021462b1c"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/n2n/n2n-composer-module-installer/zipball/6783fafa2289acc2b46e82fff5b71b4021462b1c",
+            "reference": "6783fafa2289acc2b46e82fff5b71b4021462b1c",
+            "shasum": ""
+        },
+        "require": {
+            "composer-plugin-api": "^1.0"
+        },
+        "require-dev": {
+            "composer/composer": "1.*"
+        },
+        "time": "2016-12-08 14:59:05",
+        "type": "composer-plugin",
+        "extra": {
+            "class": "n2n\\composer\\module\\ModulePlugin"
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "n2n\\composer\\module\\": "src/n2n/composer/module"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "GNU LGPL"
+        ],
+        "authors": [
+            {
+                "name": "Andreas von Burg",
+                "email": "a@von-burg.net",
+                "homepage": "http://www.von-burg.net"
+            }
+        ],
+        "description": "n2n module installer plugin for composer",
+        "homepage": "http://n2n.rocks/",
+        "keywords": [
+            "installer",
+            "module",
+            "n2n"
+        ]
+    },
+    {
+        "name": "n2n/n2n-composer-skeleton-installer",
+        "version": "v7.1.0",
+        "version_normalized": "7.1.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/n2n/n2n-composer-skeleton-installer.git",
+            "reference": "2824ef798f6580aee5ede20e4d0fff7848c96ec2"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/n2n/n2n-composer-skeleton-installer/zipball/2824ef798f6580aee5ede20e4d0fff7848c96ec2",
+            "reference": "2824ef798f6580aee5ede20e4d0fff7848c96ec2",
+            "shasum": ""
+        },
+        "require": {
+            "composer-plugin-api": "1.*"
+        },
+        "require-dev": {
+            "composer/composer": "1.*"
+        },
+        "time": "2016-12-08 14:59:05",
+        "type": "composer-plugin",
+        "extra": {
+            "class": "n2n\\composer\\skeleton\\SkeletonPlugin"
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "n2n\\composer\\skeleton\\": "src/n2n/composer/skeleton"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "GNU LGPL"
+        ],
+        "authors": [
+            {
+                "name": "Andreas von Burg",
+                "email": "a@von-burg.net",
+                "homepage": "http://www.von-burg.net",
+                "role": "Developer"
+            }
+        ],
+        "description": "n2n skeleton installer plugin for composer",
+        "homepage": "http://n2n.rocks/",
+        "keywords": [
+            "Skeleton",
+            "installer",
+            "n2n"
+        ]
+    },
+    {
+        "name": "n2n/n2n-util",
+        "version": "v7.1.10",
+        "version_normalized": "7.1.10.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/n2n/n2n-util.git",
+            "reference": "6e9f1484d535d266ceaf3b047ff8aa09a1603c69"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/n2n/n2n-util/zipball/6e9f1484d535d266ceaf3b047ff8aa09a1603c69",
+            "reference": "6e9f1484d535d266ceaf3b047ff8aa09a1603c69",
+            "shasum": ""
+        },
+        "require": {
+            "n2n/n2n-io": "^7.1.10",
+            "n2n/n2n-reflection": "^7.1.10",
+            "php": ">=7.0"
+        },
+        "time": "2016-12-08 14:59:01",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "n2n\\util\\": "src/app/n2n/util"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "GNU LGPL"
+        ],
+        "authors": [
+            {
+                "name": "Andreas von Burg",
+                "email": "a@von-burg.net",
+                "homepage": "http://www.von-burg.net"
+            }
+        ],
+        "description": "n2n util library",
+        "homepage": "http://www.n2n.ch",
+        "keywords": [
+            "n2n",
+            "util"
+        ]
+    },
+    {
+        "name": "n2n/n2n-reflection",
+        "version": "v7.1.10",
+        "version_normalized": "7.1.10.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/n2n/n2n-reflection.git",
+            "reference": "94ebd6c4598fe16010490d40a8c7bacbfd0ff2f1"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/n2n/n2n-reflection/zipball/94ebd6c4598fe16010490d40a8c7bacbfd0ff2f1",
+            "reference": "94ebd6c4598fe16010490d40a8c7bacbfd0ff2f1",
+            "shasum": ""
+        },
+        "require": {
+            "n2n/n2n-util": "^7.1.10",
+            "php": ">=7.0"
+        },
+        "time": "2016-12-08 14:59:02",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "n2n\\reflection\\": "src/app/n2n/reflection"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "GNU LGPL"
+        ],
+        "authors": [
+            {
+                "name": "Andreas von Burg",
+                "email": "a@von-burg.net",
+                "homepage": "http://www.von-burg.net",
+                "role": "Developer"
+            }
+        ],
+        "description": "n2n framework 7",
+        "homepage": "http://n2n.rocks/",
+        "keywords": [
+            "awesome",
+            "framework"
+        ]
+    },
+    {
+        "name": "n2n/n2n-io",
+        "version": "v7.1.10",
+        "version_normalized": "7.1.10.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/n2n/n2n-io.git",
+            "reference": "1b699bdc886f37fd6698a5f8f696720098e4a193"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/n2n/n2n-io/zipball/1b699bdc886f37fd6698a5f8f696720098e4a193",
+            "reference": "1b699bdc886f37fd6698a5f8f696720098e4a193",
+            "shasum": ""
+        },
+        "require": {
+            "n2n/n2n-reflection": "^7.1.10",
+            "n2n/n2n-util": "^7.1.10",
+            "php": ">=7.0"
+        },
+        "time": "2016-12-08 14:59:03",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "n2n\\io\\": "src/app/n2n/io"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "GNU LGPL"
+        ],
+        "authors": [
+            {
+                "name": "Andreas von Burg",
+                "email": "a@von-burg.net",
+                "homepage": "http://www.von-burg.net"
+            }
+        ],
+        "description": "n2n io library",
+        "homepage": "http://n2n.rocks/",
+        "keywords": [
+            "framework",
+            "io",
+            "n2n"
+        ]
+    },
+    {
+        "name": "n2n/n2n-log4php",
+        "version": "v7.1.10",
+        "version_normalized": "7.1.10.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/n2n/n2n-log4php.git",
+            "reference": "08d045588c1b0aa4d8cb4ac8216e1ded38c156ba"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/n2n/n2n-log4php/zipball/08d045588c1b0aa4d8cb4ac8216e1ded38c156ba",
+            "reference": "08d045588c1b0aa4d8cb4ac8216e1ded38c156ba",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=7.0"
+        },
+        "time": "2016-12-08 14:59:04",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "n2n\\log4php\\": "src/app/n2n/log4php"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "GNU LGPL"
+        ],
+        "description": "log4php for n2n",
+        "homepage": "http://n2n.rocks",
+        "keywords": [
+            "log4php",
+            "n2n"
+        ]
+    },
+    {
+        "name": "n2n/n2n-l10n",
+        "version": "v7.1.10",
+        "version_normalized": "7.1.10.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/n2n/n2n-l10n.git",
+            "reference": "8db65282a31a0cf964a52231b03dbec2a0cbf09a"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/n2n/n2n-l10n/zipball/8db65282a31a0cf964a52231b03dbec2a0cbf09a",
+            "reference": "8db65282a31a0cf964a52231b03dbec2a0cbf09a",
+            "shasum": ""
+        },
+        "require": {
+            "n2n/n2n-reflection": "^7.1.10",
+            "php": ">=7.0"
+        },
+        "time": "2016-12-08 14:59:03",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "n2n\\l10n\\": "src/app/n2n/l10n"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "GNU LGPL"
+        ],
+        "authors": [
+            {
+                "name": "Andreas von Burg",
+                "email": "a@von-burg.net",
+                "homepage": "http://www.von-burg.net"
+            }
+        ],
+        "description": "n2n l10n support",
+        "homepage": "http://n2n.rocks",
+        "keywords": [
+            "l10n",
+            "n2n"
+        ]
+    },
+    {
+        "name": "n2n/n2n",
+        "version": "v7.1.10",
+        "version_normalized": "7.1.10.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/n2n/n2n.git",
+            "reference": "c84d3e28a1fe0869f540aeb356be94b936cc1318"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/n2n/n2n/zipball/c84d3e28a1fe0869f540aeb356be94b936cc1318",
+            "reference": "c84d3e28a1fe0869f540aeb356be94b936cc1318",
+            "shasum": ""
+        },
+        "require": {
+            "n2n/n2n-composer-module-installer": "~7.1.0",
+            "n2n/n2n-io": "^7.1.10",
+            "n2n/n2n-l10n": "^7.1.10",
+            "n2n/n2n-log4php": "^7.1.10",
+            "n2n/n2n-reflection": "^7.1.10",
+            "n2n/n2n-util": "^7.1.10",
+            "php": ">=7.0"
+        },
+        "time": "2016-12-08 14:59:01",
+        "type": "n2n-module",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "n2n\\core\\": "src/app/n2n/core"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "GNU LGPL v3"
+        ],
+        "authors": [
+            {
+                "name": "Andreas von Burg",
+                "email": "a@von-burg.net",
+                "homepage": "http://andreas.von-burg.net"
+            },
+            {
+                "name": "Bert Hofmänner",
+                "email": "hofmaenner@hnm.ch",
+                "homepage": "http://www.hnm.ch"
+            },
+            {
+                "name": "Thomas Günther",
+                "email": "guenther@hnm.ch"
+            }
+        ],
+        "description": "The core of n2n framework.",
+        "homepage": "http://www.n2n.ch",
+        "keywords": [
+            "framework",
+            "n2n"
+        ]
+    },
+    {
+        "name": "n2n/n2n-batch",
+        "version": "v7.1.10",
+        "version_normalized": "7.1.10.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/n2n/n2n-batch.git",
+            "reference": "27b7b71fca70635e019ce30de030916819f9f886"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/n2n/n2n-batch/zipball/27b7b71fca70635e019ce30de030916819f9f886",
+            "reference": "27b7b71fca70635e019ce30de030916819f9f886",
+            "shasum": ""
+        },
+        "require": {
+            "n2n/n2n-reflection": "^7.1.10",
+            "n2n/n2n-util": "^7.1.10",
+            "php": ">=7.0"
+        },
+        "time": "2016-12-08 14:59:04",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "n2n\\batch\\": "src/app/n2n/batch"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "GNU LGPL"
+        ],
+        "authors": [
+            {
+                "name": "Andreas von Burg",
+                "email": "a@von-burg.net",
+                "homepage": "http://andreas.von-burg.net"
+            }
+        ],
+        "description": "batch job support for n2n framework",
+        "homepage": "http://n2n.rocks/",
+        "keywords": [
+            "batch job",
+            "n2n"
+        ]
+    },
+    {
+        "name": "n2n/n2n-context",
+        "version": "v7.1.10",
+        "version_normalized": "7.1.10.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/n2n/n2n-context.git",
+            "reference": "e863ca307df69661bbd6934127a0894512fb4831"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/n2n/n2n-context/zipball/e863ca307df69661bbd6934127a0894512fb4831",
+            "reference": "e863ca307df69661bbd6934127a0894512fb4831",
+            "shasum": ""
+        },
+        "require": {
+            "n2n/n2n-reflection": "^7.1.10",
+            "n2n/n2n-util": "^7.1.10",
+            "php": ">=7.0"
+        },
+        "time": "2016-12-08 14:59:03",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "n2n\\context\\": "src/app/n2n/context"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "GNU LGPL"
+        ],
+        "authors": [
+            {
+                "name": "Andreas von Burg",
+                "email": "a@von-burg.net",
+                "homepage": "http://www.von-burg.net"
+            }
+        ],
+        "description": "Context support (request, session and application scope) for n2n framework. ",
+        "homepage": "http://n2n.rocks/",
+        "keywords": [
+            "Context",
+            "application scope",
+            "n2n",
+            "request scope",
+            "scope",
+            "session scope"
+        ]
+    },
+    {
+        "name": "n2n/n2n-web",
+        "version": "v7.1.10",
+        "version_normalized": "7.1.10.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/n2n/n2n-web.git",
+            "reference": "789a976ffe3e46c2e8adcfe361b026307294f1fd"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/n2n/n2n-web/zipball/789a976ffe3e46c2e8adcfe361b026307294f1fd",
+            "reference": "789a976ffe3e46c2e8adcfe361b026307294f1fd",
+            "shasum": ""
+        },
+        "require": {
+            "n2n/n2n-context": "^7.1.10",
+            "n2n/n2n-io": "^7.1.10",
+            "n2n/n2n-l10n": "^7.1.10",
+            "n2n/n2n-reflection": "^7.1.10",
+            "n2n/n2n-util": "^7.1.10",
+            "php": ">=7.0"
+        },
+        "time": "2016-12-08 14:59:02",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "n2n\\web\\": "src/app/n2n/web"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "GNU LGPL"
+        ],
+        "authors": [
+            {
+                "name": "Andreas von Burg",
+                "email": "a@von-burg.net",
+                "homepage": "http://www.von-burg.net",
+                "role": "Developer"
+            }
+        ],
+        "description": "n2n web",
+        "homepage": "http://n2n.rocks/",
+        "keywords": [
+            "controler",
+            "form api",
+            "http",
+            "n2n",
+            "rest"
+        ]
+    },
+    {
+        "name": "n2n/n2n-impl-web-ui",
+        "version": "v7.1.10",
+        "version_normalized": "7.1.10.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/n2n/n2n-impl-web-ui.git",
+            "reference": "e0a7d10e24617aa85576f7548085855de5066c18"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/n2n/n2n-impl-web-ui/zipball/e0a7d10e24617aa85576f7548085855de5066c18",
+            "reference": "e0a7d10e24617aa85576f7548085855de5066c18",
+            "shasum": ""
+        },
+        "require": {
+            "n2n/n2n-composer-module-installer": "~7.1.0",
+            "n2n/n2n-io": "^7.1.10",
+            "n2n/n2n-l10n": "^7.1.10",
+            "n2n/n2n-reflection": "^7.1.10",
+            "n2n/n2n-util": "^7.1.10",
+            "n2n/n2n-web": "^7.1.10",
+            "php": ">=7.0"
+        },
+        "time": "2016-12-08 14:59:03",
+        "type": "n2n-module",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "n2n\\impl\\web\\ui\\": "src/app/n2n/impl/web/ui"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "GNU LGPL"
+        ],
+        "authors": [
+            {
+                "name": "Andreas von Burg",
+                "email": "a@von-burg.net",
+                "homepage": "http://www.von-burg.net"
+            }
+        ],
+        "description": "n2n web ui implementation",
+        "homepage": "http://n2n.rocks/",
+        "keywords": [
+            "csv",
+            "html",
+            "n2n",
+            "xml"
+        ]
+    },
+    {
+        "name": "n2n/n2n-impl-web-dispatch",
+        "version": "v7.1.10",
+        "version_normalized": "7.1.10.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/n2n/n2n-impl-web-dispatch.git",
+            "reference": "194566280286a508f8857c5dd42c667a311479f5"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/n2n/n2n-impl-web-dispatch/zipball/194566280286a508f8857c5dd42c667a311479f5",
+            "reference": "194566280286a508f8857c5dd42c667a311479f5",
+            "shasum": ""
+        },
+        "require": {
+            "n2n/n2n-composer-module-installer": "~7.1.0",
+            "n2n/n2n-io": "^7.1.10",
+            "n2n/n2n-l10n": "^7.1.10",
+            "n2n/n2n-reflection": "^7.1.10",
+            "n2n/n2n-util": "^7.1.10",
+            "n2n/n2n-web": "^7.1.10",
+            "php": ">=7.0"
+        },
+        "time": "2016-12-08 14:59:02",
+        "type": "n2n-module",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "n2n\\impl\\web\\dispatch\\": "src/app/n2n/impl/web/dispatch"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "GNU LGPL"
+        ],
+        "authors": [
+            {
+                "name": "Andreas von Burg",
+                "email": "a@von-burg.net",
+                "homepage": "http://www.von-burg.net"
+            }
+        ],
+        "description": "n2n dispatch implementation",
+        "homepage": "http://n2n.rocks/",
+        "keywords": [
+            "form",
+            "n2n",
+            "web"
+        ]
+    },
+    {
+        "name": "n2n/n2n-persistence",
+        "version": "v7.1.10",
+        "version_normalized": "7.1.10.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/n2n/n2n-persistence.git",
+            "reference": "0f90a74d6b07676c7f9a8238f2ca0f728f67e5ff"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/n2n/n2n-persistence/zipball/0f90a74d6b07676c7f9a8238f2ca0f728f67e5ff",
+            "reference": "0f90a74d6b07676c7f9a8238f2ca0f728f67e5ff",
+            "shasum": ""
+        },
+        "require": {
+            "n2n/n2n-io": "^7.1.10",
+            "n2n/n2n-reflection": "^7.1.10",
+            "n2n/n2n-util": "^7.1.10",
+            "php": ">=7.0"
+        },
+        "time": "2016-12-08 14:59:02",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "n2n\\persistence\\": "src/app/n2n/persistence"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "GNU LGPL"
+        ],
+        "authors": [
+            {
+                "name": "Andreas von Burg",
+                "email": "a@von-burg.net",
+                "homepage": "http://www.von-burg.net"
+            }
+        ],
+        "description": "Persitence library for n2n. Includes ORM and Meta API.",
+        "homepage": "http://n2n.rocks/",
+        "keywords": [
+            "db meta api",
+            "n2n",
+            "orm",
+            "persistence"
+        ]
+    },
+    {
+        "name": "n2n/n2n-impl-persistence-meta",
+        "version": "v7.1.10",
+        "version_normalized": "7.1.10.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/n2n/n2n-impl-persistence-meta.git",
+            "reference": "c12679b04c841ae66e85ac103c113c98042dc3b7"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/n2n/n2n-impl-persistence-meta/zipball/c12679b04c841ae66e85ac103c113c98042dc3b7",
+            "reference": "c12679b04c841ae66e85ac103c113c98042dc3b7",
+            "shasum": ""
+        },
+        "require": {
+            "n2n/n2n-io": "^7.1.10",
+            "n2n/n2n-l10n": "^7.1.10",
+            "n2n/n2n-persistence": "^7.1.10",
+            "n2n/n2n-reflection": "^7.1.10",
+            "n2n/n2n-util": "^7.1.10",
+            "php": ">=7.0"
+        },
+        "time": "2016-12-08 14:59:03",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "n2n\\impl\\persistence\\meta\\": "src/app/n2n/impl/persistence/meta"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "GNU LGPL"
+        ],
+        "authors": [
+            {
+                "name": "Thomas Günther",
+                "email": "guenther@hnm.ch"
+            }
+        ],
+        "description": "n2n persistence meta api implenation",
+        "homepage": "http://n2n.rocks/",
+        "keywords": [
+            "database meta api",
+            "n2n",
+            "persistence"
+        ]
+    },
+    {
+        "name": "n2n/n2n-impl-persistence-orm",
+        "version": "v7.1.10",
+        "version_normalized": "7.1.10.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/n2n/n2n-impl-persistence-orm.git",
+            "reference": "a7df3aed35cf8309c613f42ab3c4e5501a9b722e"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/n2n/n2n-impl-persistence-orm/zipball/a7df3aed35cf8309c613f42ab3c4e5501a9b722e",
+            "reference": "a7df3aed35cf8309c613f42ab3c4e5501a9b722e",
+            "shasum": ""
+        },
+        "require": {
+            "n2n/n2n-composer-module-installer": "~7.1.0",
+            "n2n/n2n-io": "^7.1.10",
+            "n2n/n2n-l10n": "^7.1.10",
+            "n2n/n2n-persistence": "^7.1.10",
+            "n2n/n2n-reflection": "^7.1.10",
+            "n2n/n2n-util": "^7.1.10",
+            "php": ">=7.0"
+        },
+        "time": "2016-12-08 14:59:02",
+        "type": "n2n-module",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "n2n\\impl\\persistence\\orm\\": "src/app/n2n/impl/persistence/orm"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "GNU LGPL"
+        ],
+        "authors": [
+            {
+                "name": "Andreas von Burg",
+                "email": "a@von-burg.net",
+                "homepage": "http://www.von-burg.net"
+            }
+        ],
+        "description": "n2n persistence orm implementation",
+        "homepage": "http://n2n.rocks/",
+        "keywords": [
+            "n2n",
+            "orm",
+            "persistence"
+        ]
+    },
+    {
+        "name": "n2n/n2n-mail",
+        "version": "v7.1.10",
+        "version_normalized": "7.1.10.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/n2n/n2n-mail.git",
+            "reference": "9ca7e2d4ebd22aa880b40dde71fa59162d0be2d4"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/n2n/n2n-mail/zipball/9ca7e2d4ebd22aa880b40dde71fa59162d0be2d4",
+            "reference": "9ca7e2d4ebd22aa880b40dde71fa59162d0be2d4",
+            "shasum": ""
+        },
+        "require": {
+            "n2n/n2n-reflection": "^7.1.10",
+            "n2n/n2n-util": "^7.1.10",
+            "php": ">=7.0"
+        },
+        "time": "2016-12-08 14:59:02",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "n2n\\mail\\": "src/app/n2n/mail"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "GNU LGPL"
+        ],
+        "authors": [
+            {
+                "name": "Bert Hofmänner",
+                "email": "hofmaenner@hnm.ch",
+                "homepage": "http://www.hnm.ch"
+            }
+        ],
+        "description": "Simple mail library designed for n2n framework",
+        "homepage": "http://n2n.rocks/",
+        "keywords": [
+            "mail",
+            "n2n"
+        ]
+    },
+    {
+        "name": "n2n/n2nutil-jquery",
+        "version": "v1.1.1",
+        "version_normalized": "1.1.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/n2n/n2nutil-jquery.git",
+            "reference": "245614f7e99db83234208107a840311106c28f8d"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/n2n/n2nutil-jquery/zipball/245614f7e99db83234208107a840311106c28f8d",
+            "reference": "245614f7e99db83234208107a840311106c28f8d",
+            "shasum": ""
+        },
+        "require": {
+            "n2n/n2n-composer-module-installer": "~7.1.0",
+            "n2n/n2n-web": "^7.1.10",
+            "php": ">=7.0"
+        },
+        "time": "2016-12-08 14:59:05",
+        "type": "n2n-module",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "n2nutil\\jquery\\": "src/app/n2nutil/jquery"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "GNU LGPL"
+        ],
+        "authors": [
+            {
+                "name": "Thomas Günther",
+                "email": "guenther@hnm.ch"
+            }
+        ],
+        "description": "jquery utils for n2n",
+        "homepage": "https://n2n.rocks/",
+        "keywords": [
+            "jquery",
+            "n2n"
+        ]
+    },
+    {
+        "name": "n2n/rocket",
+        "version": "v1.1.3",
+        "version_normalized": "1.1.3.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/n2n/rocket.git",
+            "reference": "dcc84393385bcee8a9d608419c509e0fb590a961"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/n2n/rocket/zipball/dcc84393385bcee8a9d608419c509e0fb590a961",
+            "reference": "dcc84393385bcee8a9d608419c509e0fb590a961",
+            "shasum": ""
+        },
+        "require": {
+            "n2n/n2n": "^7.1.10",
+            "n2n/n2n-batch": "^7.1.10",
+            "n2n/n2n-composer-module-installer": "~7.1.0",
+            "n2n/n2n-context": "^7.1.10",
+            "n2n/n2n-impl-persistence-meta": "^7.1.10",
+            "n2n/n2n-impl-persistence-orm": "^7.1.10",
+            "n2n/n2n-impl-web-dispatch": "^7.1.10",
+            "n2n/n2n-impl-web-ui": "^7.1.10",
+            "n2n/n2nutil-jquery": "^1.1.1",
+            "php": ">=7.0"
+        },
+        "time": "2016-12-08 14:59:04",
+        "type": "n2n-module",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "rocket\\": "src/app/rocket"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "GNU LGPL"
+        ],
+        "authors": [
+            {
+                "name": "Andreas von Burg",
+                "email": "a@von-burg.net",
+                "homepage": "http://www.von-burg.net",
+                "role": "Architect, Lead Developer, Concept"
+            },
+            {
+                "name": "Bert Hofmänner",
+                "email": "hofmaenner@hnm.ch",
+                "role": "Idea, Frontend UI, Design, Marketing, Concept"
+            },
+            {
+                "name": "Thomas Günther",
+                "email": "guenther@hnm.ch",
+                "role": "Developer, Frontend UI, Rocket Capability for Hangar"
+            }
+        ],
+        "description": "rocket cmf",
+        "homepage": "https://n2n.rocks/",
+        "keywords": [
+            "cmf",
+            "cms",
+            "n2n"
+        ]
+    },
+    {
+        "name": "n2n/page",
+        "version": "v1.3.2",
+        "version_normalized": "1.3.2.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/n2n/page.git",
+            "reference": "40df1365f21446b6eaf3c3a37335f11b50c0a5ca"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/n2n/page/zipball/40df1365f21446b6eaf3c3a37335f11b50c0a5ca",
+            "reference": "40df1365f21446b6eaf3c3a37335f11b50c0a5ca",
+            "shasum": ""
+        },
+        "require": {
+            "n2n/n2n-composer-module-installer": "~7.1.0",
+            "n2n/rocket": "^1.1.3",
+            "php": ">=7.0"
+        },
+        "time": "2016-12-08 14:59:04",
+        "type": "n2n-module",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "page\\": "src/app/page"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "GNU LGPL"
+        ],
+        "authors": [
+            {
+                "name": "Thomas Günther",
+                "email": "guenther@hnm.ch"
+            },
+            {
+                "name": "Andreas von Burg",
+                "email": "a@von-burg.net",
+                "homepage": "http://www.von-burg.net"
+            },
+            {
+                "name": "Bert Hofmänner",
+                "email": "hofmaenner@hnm.ch"
+            }
+        ],
+        "description": "rocket cmf",
+        "homepage": "https://n2n.rocks/",
+        "keywords": [
+            "cmf",
+            "cms",
+            "n2n"
+        ]
+    }
+]

@@ -1,0 +1,33 @@
+{
+    "authors": [
+        {
+            "email": "a@von-burg.net",
+            "homepage": "http://www.von-burg.net",
+            "name": "Andreas von Burg"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "n2n\\impl\\persistence\\orm\\": "src/app/n2n/impl/persistence/orm"
+        }
+    },
+    "description": "n2n persistence orm implementation",
+    "homepage": "http://n2n.rocks/",
+    "keywords": [
+        "n2n",
+        "persistence",
+        "orm"
+    ],
+    "license": "GNU LGPL",
+    "name": "n2n/n2n-impl-persistence-orm",
+    "require": {
+        "n2n/n2n-composer-module-installer": "~7.1.0",
+        "n2n/n2n-io": "^7.1.10",
+        "n2n/n2n-l10n": "^7.1.10",
+        "n2n/n2n-persistence": "^7.1.10",
+        "n2n/n2n-reflection": "^7.1.10",
+        "n2n/n2n-util": "^7.1.10",
+        "php": ">=7.0"
+    },
+    "type": "n2n-module"
+}

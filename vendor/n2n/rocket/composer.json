@@ -1,0 +1,47 @@
+{
+    "authors": [
+        {
+            "email": "a@von-burg.net",
+            "homepage": "http://www.von-burg.net",
+            "name": "Andreas von Burg",
+            "role": "Architect, Lead Developer, Concept"
+        },
+        {
+            "email": "hofmaenner@hnm.ch",
+            "name": "Bert Hofm\u00e4nner",
+            "role": "Idea, Frontend UI, Design, Marketing, Concept"
+        },
+        {
+            "email": "guenther@hnm.ch",
+            "name": "Thomas G\u00fcnther",
+            "role": "Developer, Frontend UI, Rocket Capability for Hangar"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "rocket\\": "src/app/rocket"
+        }
+    },
+    "description": "rocket cmf",
+    "homepage": "https://n2n.rocks/",
+    "keywords": [
+        "cms",
+        "cmf",
+        "n2n"
+    ],
+    "license": "GNU LGPL",
+    "name": "n2n/rocket",
+    "require": {
+        "n2n/n2n": "^7.1.10",
+        "n2n/n2n-batch": "^7.1.10",
+        "n2n/n2n-composer-module-installer": "~7.1.0",
+        "n2n/n2n-context": "^7.1.10",
+        "n2n/n2n-impl-persistence-meta": "^7.1.10",
+        "n2n/n2n-impl-persistence-orm": "^7.1.10",
+        "n2n/n2n-impl-web-dispatch": "^7.1.10",
+        "n2n/n2n-impl-web-ui": "^7.1.10",
+        "n2n/n2nutil-jquery": "^1.1.1",
+        "php": ">=7.0"
+    },
+    "type": "n2n-module"
+}

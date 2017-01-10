@@ -1,0 +1,17 @@
+{
+  "menuGroups": {
+    "Produkte": {
+      "exclusiv-motherboard": "Motherboards",
+      "exclusiv-cpu": "Prozessoren",
+      "exclusiv-ram": "Arbeitsspeicher",
+      "exclusiv-gpu": "Grafikkarten"
+    },
+    "Marken": {
+      "exclusiv-brand": "Marken"
+    },
+    "Sockel usw.": {
+      "exclusiv-cpu-socket": "Cpu Sockel",
+      "exclusiv-ram-type": "Arbeitsspeicher Typ"
+    }
+  }
+}
