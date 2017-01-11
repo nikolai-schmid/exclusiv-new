@@ -4,6 +4,7 @@ namespace exclusiv\bo;
 use exclusiv\bo\product\cpu\CPU;
 use exclusiv\bo\product\Motherboard;
 use exclusiv\bo\product\pci\GPU;
+use exclusiv\bo\product\ProductAdapter;
 use exclusiv\bo\product\ram\RAM;
 use n2n\persistence\orm\annotation\AnnoOneToMany;
 use n2n\reflection\annotation\AnnoInit;
@@ -15,6 +16,7 @@ class Brand extends ObjectAdapter {
         $ai->p('gpus', new AnnoOneToMany(GPU::getClass(), 'brand'));
         $ai->p('rams', new AnnoOneToMany(RAM::getClass(), 'brand'));
         $ai->p('motherboards', new AnnoOneToMany(Motherboard::getClass(), 'brand'));
+        $ai->p('products', new AnnoOneToMany(ProductAdapter::getClass(), 'brand'));
     }
 
 	private $id;
