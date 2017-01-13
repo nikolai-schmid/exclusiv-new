@@ -1,11 +1,11 @@
 {
     "specs": {
-        "exclusiv-ram": {
+        "exclusiv-product-adapter": {
             "type": "entity",
-            "entity": "exclusiv\\bo\\product\\ram\\RAM",
+            "entity": "exclusiv\\bo\\product\\ProductAdapter",
             "dataSourceName": null,
-            "label": "RAM",
-            "pluralLabel": "RAMs",
+            "label": "Product Adapter",
+            "pluralLabel": "Product Adapters",
             "fields": {
                 "name": {
                     "class": "rocket\\spec\\ei\\component\\field\\impl\\string\\StringEiField",
@@ -69,311 +69,7 @@
                         "displayInAddView": true,
                         "constant": false,
                         "readOnly": false,
-                        "mandatory": true,
-                        "draftable": false,
-                        "allowedExtensions": [],
-                        "extraThumbDimensions": [],
-                        "checkImageResourceMemory": true
-                    },
-                    "label": "Image",
-                    "objectProperty": "image",
-                    "entityProperty": "image"
-                },
-                "ramType": {
-                    "class": "rocket\\spec\\ei\\component\\field\\impl\\relation\\ManyToOneSelectEiField",
-                    "props": {
-                        "displayInOverview": true,
-                        "displayInDetailView": true,
-                        "displayInEditView": true,
-                        "displayInAddView": true,
-                        "constant": false,
-                        "readOnly": false,
-                        "mandatory": true,
-                        "draftable": false,
-                        "targetRemovalStrategy": "prevent"
-                    },
-                    "label": "Ram Type",
-                    "objectProperty": "ramType",
-                    "entityProperty": "ramType"
-                }
-            },
-            "commands": {
-                "overviewEiCommand": {
-                    "class": "rocket\\spec\\ei\\component\\command\\impl\\common\\OverviewEiCommand",
-                    "props": []
-                },
-                "addEiCommand": {
-                    "class": "rocket\\spec\\ei\\component\\command\\impl\\common\\AddEiCommand",
-                    "props": []
-                },
-                "deleteEiCommand": {
-                    "class": "rocket\\spec\\ei\\component\\command\\impl\\common\\DeleteEiCommand",
-                    "props": []
-                },
-                "detailEiCommand": {
-                    "class": "rocket\\spec\\ei\\component\\command\\impl\\common\\DetailEiCommand",
-                    "props": []
-                },
-                "editEiCommand": {
-                    "class": "rocket\\spec\\ei\\component\\command\\impl\\common\\EditEiCommand",
-                    "props": []
-                },
-                "treeMoveEiCommand": {
-                    "class": "rocket\\spec\\ei\\component\\command\\impl\\tree\\TreeMoveEiCommand",
-                    "props": []
-                }
-            },
-            "modificators": [],
-            "defaultMaskId": null
-        },
-        "exclusiv-motherboard": {
-            "type": "entity",
-            "entity": "exclusiv\\bo\\product\\Motherboard",
-            "dataSourceName": null,
-            "label": "Motherboard",
-            "pluralLabel": "Motherboards",
-            "fields": {
-                "name": {
-                    "class": "rocket\\spec\\ei\\component\\field\\impl\\string\\StringEiField",
-                    "props": {
-                        "displayInOverview": true,
-                        "displayInDetailView": true,
-                        "displayInEditView": true,
-                        "displayInAddView": true,
-                        "constant": false,
-                        "readOnly": false,
-                        "mandatory": true,
-                        "draftable": false,
-                        "maxlength": null,
-                        "multiline": false
-                    },
-                    "label": "Name",
-                    "objectProperty": "name",
-                    "entityProperty": "name"
-                },
-                "brand": {
-                    "class": "rocket\\spec\\ei\\component\\field\\impl\\relation\\ManyToOneSelectEiField",
-                    "props": {
-                        "displayInOverview": true,
-                        "displayInDetailView": true,
-                        "displayInEditView": true,
-                        "displayInAddView": true,
-                        "constant": false,
-                        "readOnly": false,
-                        "mandatory": true,
-                        "draftable": false,
-                        "targetRemovalStrategy": "prevent"
-                    },
-                    "label": "Brand",
-                    "objectProperty": "brand",
-                    "entityProperty": "brand"
-                },
-                "price": {
-                    "class": "rocket\\spec\\ei\\component\\field\\impl\\string\\StringEiField",
-                    "props": {
-                        "displayInOverview": true,
-                        "displayInDetailView": true,
-                        "displayInEditView": true,
-                        "displayInAddView": true,
-                        "constant": false,
-                        "readOnly": false,
-                        "mandatory": true,
-                        "draftable": false,
-                        "maxlength": null,
-                        "multiline": false
-                    },
-                    "label": "Price",
-                    "objectProperty": "price",
-                    "entityProperty": "price"
-                },
-                "image": {
-                    "class": "rocket\\spec\\ei\\component\\field\\impl\\file\\FileEiField",
-                    "props": {
-                        "displayInOverview": true,
-                        "displayInDetailView": true,
-                        "displayInEditView": true,
-                        "displayInAddView": true,
-                        "constant": false,
-                        "readOnly": false,
-                        "mandatory": true,
-                        "draftable": false,
-                        "allowedExtensions": [],
-                        "extraThumbDimensions": [],
-                        "checkImageResourceMemory": true
-                    },
-                    "label": "Image",
-                    "objectProperty": "image",
-                    "entityProperty": "image"
-                },
-                "cpuSocket": {
-                    "class": "rocket\\spec\\ei\\component\\field\\impl\\relation\\ManyToOneSelectEiField",
-                    "props": {
-                        "displayInOverview": true,
-                        "displayInDetailView": true,
-                        "displayInEditView": true,
-                        "displayInAddView": true,
-                        "constant": false,
-                        "readOnly": false,
-                        "mandatory": true,
-                        "draftable": false,
-                        "targetRemovalStrategy": "prevent"
-                    },
-                    "label": "Cpu Socket",
-                    "objectProperty": "cpuSocket",
-                    "entityProperty": "cpuSocket"
-                },
-                "formFactor": {
-                    "class": "rocket\\spec\\ei\\component\\field\\impl\\string\\StringEiField",
-                    "props": {
-                        "displayInOverview": true,
-                        "displayInDetailView": true,
-                        "displayInEditView": true,
-                        "displayInAddView": true,
-                        "constant": false,
-                        "readOnly": false,
-                        "mandatory": true,
-                        "draftable": false,
-                        "maxlength": null,
-                        "multiline": false
-                    },
-                    "label": "Form Factor",
-                    "objectProperty": "formFactor",
-                    "entityProperty": "formFactor"
-                },
-                "chipset": {
-                    "class": "rocket\\spec\\ei\\component\\field\\impl\\string\\StringEiField",
-                    "props": {
-                        "displayInOverview": true,
-                        "displayInDetailView": true,
-                        "displayInEditView": true,
-                        "displayInAddView": true,
-                        "constant": false,
-                        "readOnly": false,
-                        "mandatory": true,
-                        "draftable": false,
-                        "maxlength": null,
-                        "multiline": false
-                    },
-                    "label": "Chipset",
-                    "objectProperty": "chipset",
-                    "entityProperty": "chipset"
-                },
-                "ramTypes": {
-                    "class": "rocket\\spec\\ei\\component\\field\\impl\\relation\\ManyToManySelectEiField",
-                    "props": {
-                        "displayInOverview": true,
-                        "displayInDetailView": true,
-                        "displayInEditView": true,
-                        "displayInAddView": true,
-                        "constant": false,
-                        "readOnly": false,
-                        "draftable": false,
-                        "targetRemovalStrategy": "prevent"
-                    },
-                    "label": "Ram Types",
-                    "objectProperty": "ramTypes",
-                    "entityProperty": "ramTypes"
-                }
-            },
-            "commands": {
-                "treeMoveEiCommand": {
-                    "class": "rocket\\spec\\ei\\component\\command\\impl\\tree\\TreeMoveEiCommand",
-                    "props": []
-                },
-                "deleteEiCommand": {
-                    "class": "rocket\\spec\\ei\\component\\command\\impl\\common\\DeleteEiCommand",
-                    "props": []
-                },
-                "editEiCommand": {
-                    "class": "rocket\\spec\\ei\\component\\command\\impl\\common\\EditEiCommand",
-                    "props": []
-                },
-                "addEiCommand": {
-                    "class": "rocket\\spec\\ei\\component\\command\\impl\\common\\AddEiCommand",
-                    "props": []
-                },
-                "detailEiCommand": {
-                    "class": "rocket\\spec\\ei\\component\\command\\impl\\common\\DetailEiCommand",
-                    "props": []
-                },
-                "overviewEiCommand": {
-                    "class": "rocket\\spec\\ei\\component\\command\\impl\\common\\OverviewEiCommand",
-                    "props": []
-                }
-            },
-            "modificators": [],
-            "defaultMaskId": null
-        },
-        "exclusiv-gpu": {
-            "type": "entity",
-            "entity": "exclusiv\\bo\\product\\pci\\GPU",
-            "dataSourceName": null,
-            "label": "GPU",
-            "pluralLabel": "GPUs",
-            "fields": {
-                "name": {
-                    "class": "rocket\\spec\\ei\\component\\field\\impl\\string\\StringEiField",
-                    "props": {
-                        "displayInOverview": true,
-                        "displayInDetailView": true,
-                        "displayInEditView": true,
-                        "displayInAddView": true,
-                        "constant": false,
-                        "readOnly": false,
-                        "mandatory": true,
-                        "draftable": false,
-                        "maxlength": null,
-                        "multiline": false
-                    },
-                    "label": "Name",
-                    "objectProperty": "name",
-                    "entityProperty": "name"
-                },
-                "brand": {
-                    "class": "rocket\\spec\\ei\\component\\field\\impl\\relation\\ManyToOneSelectEiField",
-                    "props": {
-                        "displayInOverview": true,
-                        "displayInDetailView": true,
-                        "displayInEditView": true,
-                        "displayInAddView": true,
-                        "constant": false,
-                        "readOnly": false,
-                        "mandatory": true,
-                        "draftable": false,
-                        "targetRemovalStrategy": "prevent"
-                    },
-                    "label": "Brand",
-                    "objectProperty": "brand",
-                    "entityProperty": "brand"
-                },
-                "price": {
-                    "class": "rocket\\spec\\ei\\component\\field\\impl\\string\\StringEiField",
-                    "props": {
-                        "displayInOverview": true,
-                        "displayInDetailView": true,
-                        "displayInEditView": true,
-                        "displayInAddView": true,
-                        "constant": false,
-                        "readOnly": false,
-                        "mandatory": true,
-                        "draftable": false,
-                        "maxlength": null,
-                        "multiline": false
-                    },
-                    "label": "Price",
-                    "objectProperty": "price",
-                    "entityProperty": "price"
-                },
-                "image": {
-                    "class": "rocket\\spec\\ei\\component\\field\\impl\\file\\FileEiField",
-                    "props": {
-                        "displayInOverview": true,
-                        "displayInDetailView": true,
-                        "displayInEditView": true,
-                        "displayInAddView": true,
-                        "constant": false,
-                        "readOnly": false,
-                        "mandatory": true,
+                        "mandatory": false,
                         "draftable": false,
                         "allowedExtensions": [],
                         "extraThumbDimensions": [],
@@ -385,24 +81,24 @@
                 }
             },
             "commands": {
-                "overviewEiCommand": {
-                    "class": "rocket\\spec\\ei\\component\\command\\impl\\common\\OverviewEiCommand",
-                    "props": []
-                },
-                "treeMoveEiCommand": {
-                    "class": "rocket\\spec\\ei\\component\\command\\impl\\tree\\TreeMoveEiCommand",
+                "editEiCommand": {
+                    "class": "rocket\\spec\\ei\\component\\command\\impl\\common\\EditEiCommand",
                     "props": []
                 },
                 "detailEiCommand": {
                     "class": "rocket\\spec\\ei\\component\\command\\impl\\common\\DetailEiCommand",
                     "props": []
                 },
+                "treeMoveEiCommand": {
+                    "class": "rocket\\spec\\ei\\component\\command\\impl\\tree\\TreeMoveEiCommand",
+                    "props": []
+                },
                 "deleteEiCommand": {
                     "class": "rocket\\spec\\ei\\component\\command\\impl\\common\\DeleteEiCommand",
                     "props": []
                 },
-                "editEiCommand": {
-                    "class": "rocket\\spec\\ei\\component\\command\\impl\\common\\EditEiCommand",
+                "overviewEiCommand": {
+                    "class": "rocket\\spec\\ei\\component\\command\\impl\\common\\OverviewEiCommand",
                     "props": []
                 },
                 "addEiCommand": {
@@ -455,15 +151,7 @@
                 },
                 "gpus": {
                     "class": "rocket\\spec\\ei\\component\\field\\impl\\relation\\OneToManySelectEiField",
-                    "props": {
-                        "displayInOverview": true,
-                        "displayInDetailView": true,
-                        "displayInEditView": true,
-                        "displayInAddView": true,
-                        "constant": false,
-                        "readOnly": true,
-                        "draftable": false
-                    },
+                    "props": [],
                     "label": "Gpus",
                     "objectProperty": "gpus",
                     "entityProperty": "gpus"
@@ -483,18 +171,15 @@
                     "entityProperty": "motherboards"
                 },
                 "products": {
-                    "class": "rocket\\spec\\ei\\component\\field\\impl\\string\\StringEiField",
+                    "class": "rocket\\spec\\ei\\component\\field\\impl\\relation\\OneToManySelectEiField",
                     "props": {
                         "displayInOverview": true,
                         "displayInDetailView": true,
                         "displayInEditView": true,
                         "displayInAddView": true,
                         "constant": false,
-                        "readOnly": false,
-                        "mandatory": false,
-                        "draftable": false,
-                        "maxlength": null,
-                        "multiline": false
+                        "readOnly": true,
+                        "draftable": false
                     },
                     "label": "Products",
                     "objectProperty": "products",
@@ -502,59 +187,41 @@
                 }
             },
             "commands": {
-                "addEiCommand": {
-                    "class": "rocket\\spec\\ei\\component\\command\\impl\\common\\AddEiCommand",
+                "overviewEiCommand": {
+                    "class": "rocket\\spec\\ei\\component\\command\\impl\\common\\OverviewEiCommand",
                     "props": []
                 },
                 "treeMoveEiCommand": {
                     "class": "rocket\\spec\\ei\\component\\command\\impl\\tree\\TreeMoveEiCommand",
                     "props": []
                 },
-                "overviewEiCommand": {
-                    "class": "rocket\\spec\\ei\\component\\command\\impl\\common\\OverviewEiCommand",
-                    "props": []
-                },
                 "detailEiCommand": {
                     "class": "rocket\\spec\\ei\\component\\command\\impl\\common\\DetailEiCommand",
                     "props": []
                 },
-                "deleteEiCommand": {
-                    "class": "rocket\\spec\\ei\\component\\command\\impl\\common\\DeleteEiCommand",
+                "addEiCommand": {
+                    "class": "rocket\\spec\\ei\\component\\command\\impl\\common\\AddEiCommand",
                     "props": []
                 },
                 "editEiCommand": {
                     "class": "rocket\\spec\\ei\\component\\command\\impl\\common\\EditEiCommand",
+                    "props": []
+                },
+                "deleteEiCommand": {
+                    "class": "rocket\\spec\\ei\\component\\command\\impl\\common\\DeleteEiCommand",
                     "props": []
                 }
             },
             "modificators": [],
             "defaultMaskId": null
         },
-        "exclusiv-cpu": {
+        "exclusiv-motherboard": {
             "type": "entity",
-            "entity": "exclusiv\\bo\\product\\cpu\\CPU",
+            "entity": "exclusiv\\bo\\product\\Motherboard",
             "dataSourceName": null,
-            "label": "CPU",
-            "pluralLabel": "CPUs",
+            "label": "Motherboard",
+            "pluralLabel": "Motherboards",
             "fields": {
-                "name": {
-                    "class": "rocket\\spec\\ei\\component\\field\\impl\\string\\StringEiField",
-                    "props": {
-                        "displayInOverview": true,
-                        "displayInDetailView": true,
-                        "displayInEditView": true,
-                        "displayInAddView": true,
-                        "constant": false,
-                        "readOnly": false,
-                        "mandatory": true,
-                        "draftable": false,
-                        "maxlength": null,
-                        "multiline": false
-                    },
-                    "label": "Name",
-                    "objectProperty": "name",
-                    "entityProperty": "name"
-                },
                 "cpuSocket": {
                     "class": "rocket\\spec\\ei\\component\\field\\impl\\relation\\ManyToOneSelectEiField",
                     "props": {
@@ -572,123 +239,21 @@
                     "objectProperty": "cpuSocket",
                     "entityProperty": "cpuSocket"
                 },
-                "brand": {
-                    "class": "rocket\\spec\\ei\\component\\field\\impl\\relation\\ManyToOneSelectEiField",
-                    "props": {
-                        "displayInOverview": true,
-                        "displayInDetailView": true,
-                        "displayInEditView": true,
-                        "displayInAddView": true,
-                        "constant": false,
-                        "readOnly": false,
-                        "mandatory": true,
-                        "draftable": false,
-                        "targetRemovalStrategy": "prevent"
-                    },
-                    "label": "Brand",
-                    "objectProperty": "brand",
-                    "entityProperty": "brand"
-                },
-                "price": {
+                "formFactor": {
                     "class": "rocket\\spec\\ei\\component\\field\\impl\\string\\StringEiField",
-                    "props": {
-                        "displayInOverview": true,
-                        "displayInDetailView": true,
-                        "displayInEditView": true,
-                        "displayInAddView": true,
-                        "constant": false,
-                        "readOnly": false,
-                        "mandatory": true,
-                        "draftable": false,
-                        "maxlength": null,
-                        "multiline": false
-                    },
-                    "label": "Price",
-                    "objectProperty": "price",
-                    "entityProperty": "price"
-                },
-                "image": {
-                    "class": "rocket\\spec\\ei\\component\\field\\impl\\file\\FileEiField",
-                    "props": {
-                        "displayInOverview": true,
-                        "displayInDetailView": true,
-                        "displayInEditView": true,
-                        "displayInAddView": true,
-                        "constant": false,
-                        "readOnly": false,
-                        "mandatory": true,
-                        "draftable": false,
-                        "allowedExtensions": [],
-                        "extraThumbDimensions": [],
-                        "checkImageResourceMemory": true
-                    },
-                    "label": "Image",
-                    "objectProperty": "image",
-                    "entityProperty": "image"
-                }
-            },
-            "commands": {
-                "overviewEiCommand": {
-                    "class": "rocket\\spec\\ei\\component\\command\\impl\\common\\OverviewEiCommand",
-                    "props": []
-                },
-                "editEiCommand": {
-                    "class": "rocket\\spec\\ei\\component\\command\\impl\\common\\EditEiCommand",
-                    "props": []
-                },
-                "detailEiCommand": {
-                    "class": "rocket\\spec\\ei\\component\\command\\impl\\common\\DetailEiCommand",
-                    "props": []
-                },
-                "deleteEiCommand": {
-                    "class": "rocket\\spec\\ei\\component\\command\\impl\\common\\DeleteEiCommand",
-                    "props": []
-                },
-                "addEiCommand": {
-                    "class": "rocket\\spec\\ei\\component\\command\\impl\\common\\AddEiCommand",
-                    "props": []
-                },
-                "treeMoveEiCommand": {
-                    "class": "rocket\\spec\\ei\\component\\command\\impl\\tree\\TreeMoveEiCommand",
-                    "props": []
-                }
-            },
-            "modificators": [],
-            "defaultMaskId": null
-        },
-        "exclusiv-ram-type": {
-            "type": "entity",
-            "entity": "exclusiv\\bo\\product\\ram\\RAMType",
-            "dataSourceName": null,
-            "label": "RAM Type",
-            "pluralLabel": "RAM Types",
-            "fields": {
-                "name": {
-                    "class": "rocket\\spec\\ei\\component\\field\\impl\\string\\StringEiField",
-                    "props": {
-                        "displayInOverview": true,
-                        "displayInDetailView": true,
-                        "displayInEditView": true,
-                        "displayInAddView": true,
-                        "constant": false,
-                        "readOnly": false,
-                        "mandatory": true,
-                        "draftable": false,
-                        "maxlength": null,
-                        "multiline": false
-                    },
-                    "label": "Name",
-                    "objectProperty": "name",
-                    "entityProperty": "name"
-                },
-                "rams": {
-                    "class": "rocket\\spec\\ei\\component\\field\\impl\\relation\\OneToManySelectEiField",
                     "props": [],
-                    "label": "Rams",
-                    "objectProperty": "rams",
-                    "entityProperty": "rams"
+                    "label": "Form Factor",
+                    "objectProperty": "formFactor",
+                    "entityProperty": "formFactor"
                 },
-                "motherboards": {
+                "chipset": {
+                    "class": "rocket\\spec\\ei\\component\\field\\impl\\string\\StringEiField",
+                    "props": [],
+                    "label": "Chipset",
+                    "objectProperty": "chipset",
+                    "entityProperty": "chipset"
+                },
+                "ramTypes": {
                     "class": "rocket\\spec\\ei\\component\\field\\impl\\relation\\ManyToManySelectEiField",
                     "props": {
                         "displayInOverview": true,
@@ -697,14 +262,27 @@
                         "displayInAddView": true,
                         "constant": false,
                         "readOnly": false,
-                        "draftable": false
+                        "draftable": false,
+                        "targetRemovalStrategy": "prevent"
                     },
-                    "label": "Motherboards",
-                    "objectProperty": "motherboards",
-                    "entityProperty": "motherboards"
+                    "label": "Ram Types",
+                    "objectProperty": "ramTypes",
+                    "entityProperty": "ramTypes"
                 }
             },
             "commands": {
+                "treeMoveEiCommand": {
+                    "class": "rocket\\spec\\ei\\component\\command\\impl\\tree\\TreeMoveEiCommand",
+                    "props": []
+                },
+                "deleteEiCommand": {
+                    "class": "rocket\\spec\\ei\\component\\command\\impl\\common\\DeleteEiCommand",
+                    "props": []
+                },
+                "addEiCommand": {
+                    "class": "rocket\\spec\\ei\\component\\command\\impl\\common\\AddEiCommand",
+                    "props": []
+                },
                 "detailEiCommand": {
                     "class": "rocket\\spec\\ei\\component\\command\\impl\\common\\DetailEiCommand",
                     "props": []
@@ -713,20 +291,8 @@
                     "class": "rocket\\spec\\ei\\component\\command\\impl\\common\\OverviewEiCommand",
                     "props": []
                 },
-                "addEiCommand": {
-                    "class": "rocket\\spec\\ei\\component\\command\\impl\\common\\AddEiCommand",
-                    "props": []
-                },
-                "deleteEiCommand": {
-                    "class": "rocket\\spec\\ei\\component\\command\\impl\\common\\DeleteEiCommand",
-                    "props": []
-                },
                 "editEiCommand": {
                     "class": "rocket\\spec\\ei\\component\\command\\impl\\common\\EditEiCommand",
-                    "props": []
-                },
-                "treeMoveEiCommand": {
-                    "class": "rocket\\spec\\ei\\component\\command\\impl\\tree\\TreeMoveEiCommand",
                     "props": []
                 }
             },
@@ -782,12 +348,102 @@
                 }
             },
             "commands": {
+                "treeMoveEiCommand": {
+                    "class": "rocket\\spec\\ei\\component\\command\\impl\\tree\\TreeMoveEiCommand",
+                    "props": []
+                },
+                "deleteEiCommand": {
+                    "class": "rocket\\spec\\ei\\component\\command\\impl\\common\\DeleteEiCommand",
+                    "props": []
+                },
+                "overviewEiCommand": {
+                    "class": "rocket\\spec\\ei\\component\\command\\impl\\common\\OverviewEiCommand",
+                    "props": []
+                },
                 "addEiCommand": {
                     "class": "rocket\\spec\\ei\\component\\command\\impl\\common\\AddEiCommand",
                     "props": []
                 },
+                "editEiCommand": {
+                    "class": "rocket\\spec\\ei\\component\\command\\impl\\common\\EditEiCommand",
+                    "props": []
+                },
                 "detailEiCommand": {
                     "class": "rocket\\spec\\ei\\component\\command\\impl\\common\\DetailEiCommand",
+                    "props": []
+                }
+            },
+            "modificators": [],
+            "defaultMaskId": null
+        },
+        "exclusiv-cpu": {
+            "type": "entity",
+            "entity": "exclusiv\\bo\\product\\cpu\\CPU",
+            "dataSourceName": null,
+            "label": "CPU",
+            "pluralLabel": "CPUs",
+            "fields": {
+                "cpuSocket": {
+                    "class": "rocket\\spec\\ei\\component\\field\\impl\\relation\\ManyToOneSelectEiField",
+                    "props": {
+                        "displayInOverview": true,
+                        "displayInDetailView": true,
+                        "displayInEditView": true,
+                        "displayInAddView": true,
+                        "constant": false,
+                        "readOnly": false,
+                        "mandatory": true,
+                        "draftable": false,
+                        "targetRemovalStrategy": "prevent"
+                    },
+                    "label": "Cpu Socket",
+                    "objectProperty": "cpuSocket",
+                    "entityProperty": "cpuSocket"
+                }
+            },
+            "commands": {
+                "deleteEiCommand": {
+                    "class": "rocket\\spec\\ei\\component\\command\\impl\\common\\DeleteEiCommand",
+                    "props": []
+                },
+                "treeMoveEiCommand": {
+                    "class": "rocket\\spec\\ei\\component\\command\\impl\\tree\\TreeMoveEiCommand",
+                    "props": []
+                },
+                "overviewEiCommand": {
+                    "class": "rocket\\spec\\ei\\component\\command\\impl\\common\\OverviewEiCommand",
+                    "props": []
+                },
+                "detailEiCommand": {
+                    "class": "rocket\\spec\\ei\\component\\command\\impl\\common\\DetailEiCommand",
+                    "props": []
+                },
+                "editEiCommand": {
+                    "class": "rocket\\spec\\ei\\component\\command\\impl\\common\\EditEiCommand",
+                    "props": []
+                },
+                "addEiCommand": {
+                    "class": "rocket\\spec\\ei\\component\\command\\impl\\common\\AddEiCommand",
+                    "props": []
+                }
+            },
+            "modificators": [],
+            "defaultMaskId": null
+        },
+        "exclusiv-gpu": {
+            "type": "entity",
+            "entity": "exclusiv\\bo\\product\\pci\\GPU",
+            "dataSourceName": null,
+            "label": "GPU",
+            "pluralLabel": "GPUs",
+            "fields": [],
+            "commands": {
+                "detailEiCommand": {
+                    "class": "rocket\\spec\\ei\\component\\command\\impl\\common\\DetailEiCommand",
+                    "props": []
+                },
+                "treeMoveEiCommand": {
+                    "class": "rocket\\spec\\ei\\component\\command\\impl\\tree\\TreeMoveEiCommand",
                     "props": []
                 },
                 "overviewEiCommand": {
@@ -798,12 +454,143 @@
                     "class": "rocket\\spec\\ei\\component\\command\\impl\\common\\DeleteEiCommand",
                     "props": []
                 },
+                "editEiCommand": {
+                    "class": "rocket\\spec\\ei\\component\\command\\impl\\common\\EditEiCommand",
+                    "props": []
+                },
+                "addEiCommand": {
+                    "class": "rocket\\spec\\ei\\component\\command\\impl\\common\\AddEiCommand",
+                    "props": []
+                }
+            },
+            "modificators": [],
+            "defaultMaskId": null
+        },
+        "exclusiv-ram-type": {
+            "type": "entity",
+            "entity": "exclusiv\\bo\\product\\ram\\RAMType",
+            "dataSourceName": null,
+            "label": "RAM Type",
+            "pluralLabel": "RAM Types",
+            "fields": {
+                "name": {
+                    "class": "rocket\\spec\\ei\\component\\field\\impl\\string\\StringEiField",
+                    "props": {
+                        "displayInOverview": true,
+                        "displayInDetailView": true,
+                        "displayInEditView": true,
+                        "displayInAddView": true,
+                        "constant": false,
+                        "readOnly": false,
+                        "mandatory": true,
+                        "draftable": false,
+                        "maxlength": null,
+                        "multiline": false
+                    },
+                    "label": "Name",
+                    "objectProperty": "name",
+                    "entityProperty": "name"
+                },
+                "rams": {
+                    "class": "rocket\\spec\\ei\\component\\field\\impl\\relation\\OneToManySelectEiField",
+                    "props": [],
+                    "label": "Rams",
+                    "objectProperty": "rams",
+                    "entityProperty": "rams"
+                },
+                "motherboards": {
+                    "class": "rocket\\spec\\ei\\component\\field\\impl\\relation\\ManyToManySelectEiField",
+                    "props": {
+                        "displayInOverview": true,
+                        "displayInDetailView": true,
+                        "displayInEditView": true,
+                        "displayInAddView": true,
+                        "constant": false,
+                        "readOnly": false,
+                        "draftable": false
+                    },
+                    "label": "Motherboards",
+                    "objectProperty": "motherboards",
+                    "entityProperty": "motherboards"
+                }
+            },
+            "commands": {
                 "treeMoveEiCommand": {
                     "class": "rocket\\spec\\ei\\component\\command\\impl\\tree\\TreeMoveEiCommand",
                     "props": []
                 },
                 "editEiCommand": {
                     "class": "rocket\\spec\\ei\\component\\command\\impl\\common\\EditEiCommand",
+                    "props": []
+                },
+                "deleteEiCommand": {
+                    "class": "rocket\\spec\\ei\\component\\command\\impl\\common\\DeleteEiCommand",
+                    "props": []
+                },
+                "overviewEiCommand": {
+                    "class": "rocket\\spec\\ei\\component\\command\\impl\\common\\OverviewEiCommand",
+                    "props": []
+                },
+                "detailEiCommand": {
+                    "class": "rocket\\spec\\ei\\component\\command\\impl\\common\\DetailEiCommand",
+                    "props": []
+                },
+                "addEiCommand": {
+                    "class": "rocket\\spec\\ei\\component\\command\\impl\\common\\AddEiCommand",
+                    "props": []
+                }
+            },
+            "modificators": [],
+            "defaultMaskId": null
+        },
+        "exclusiv-ram": {
+            "type": "entity",
+            "entity": "exclusiv\\bo\\product\\ram\\RAM",
+            "dataSourceName": null,
+            "label": "RAM",
+            "pluralLabel": "RAMs",
+            "fields": {
+                "ramType": {
+                    "class": "rocket\\spec\\ei\\component\\field\\impl\\relation\\ManyToOneSelectEiField",
+                    "props": {
+                        "displayInOverview": true,
+                        "displayInDetailView": true,
+                        "displayInEditView": true,
+                        "displayInAddView": true,
+                        "constant": false,
+                        "readOnly": false,
+                        "mandatory": true,
+                        "draftable": false,
+                        "targetRemovalStrategy": "prevent"
+                    },
+                    "label": "Ram Type",
+                    "objectProperty": "ramType",
+                    "entityProperty": "ramType"
+                }
+            },
+            "commands": {
+                "treeMoveEiCommand": {
+                    "class": "rocket\\spec\\ei\\component\\command\\impl\\tree\\TreeMoveEiCommand",
+                    "props": []
+                },
+                "detailEiCommand": {
+                    "class": "rocket\\spec\\ei\\component\\command\\impl\\common\\DetailEiCommand",
+                    "props": []
+                },
+                "deleteEiCommand": {
+                    "class": "rocket\\spec\\ei\\component\\command\\impl\\common\\DeleteEiCommand",
+                    "props": []
+                },
+                "addEiCommand": {
+                    "class": "rocket\\spec\\ei\\component\\command\\impl\\common\\AddEiCommand",
+                    "props": []
+                },
+                "editEiCommand": {
+                    "class": "rocket\\spec\\ei\\component\\command\\impl\\common\\EditEiCommand",
+                    "props": []
+                },
+                "overviewEiCommand": {
+                    "class": "rocket\\spec\\ei\\component\\command\\impl\\common\\OverviewEiCommand",
                     "props": []
                 }
             },

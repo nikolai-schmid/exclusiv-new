@@ -12,6 +12,9 @@
     "Sockel usw.": {
       "exclusiv-cpu-socket": "Cpu Sockel",
       "exclusiv-ram-type": "Arbeitsspeicher Typ"
+    },
+    "Seiten": {
+      "page-page":"Seite"
     }
   }
 }

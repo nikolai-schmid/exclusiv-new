@@ -1,7 +1,5 @@
 <?php
-	$view->useTemplate('inc\template.html', array('showSearch' => true));
-    
-	$html->meta()->setTitle($html->getText('home_tab_text'));
+	$view->useTemplate('inc\template.html');
 ?>
 
 <div class="row">

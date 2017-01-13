@@ -77,4 +77,8 @@ class Motherboard extends ProductAdapter {
 	public function setRamTypes(\ArrayObject $ramTypes) {
 		$this->ramTypes = $ramTypes;
 	}
+	
+	public function getType() {
+		return ProductAdapter::TYPE_MOTHERBOARD;
+	}
 }

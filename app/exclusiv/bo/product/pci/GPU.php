@@ -11,5 +11,7 @@ use n2n\persistence\orm\annotation\AnnoManyToOne;
 use n2n\reflection\ObjectAdapter;
 
 class GPU extends ProductAdapter {
-	
+	public function getType() {
+		return ProductAdapter::TYPE_GPU;
+	}
 }

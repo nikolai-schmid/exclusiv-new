@@ -24,4 +24,8 @@ class RAM extends ProductAdapter  {
 	public function setRamType(RAMType $ramType) {
 		$this->ramType = $ramType;
 	}
+	
+	public function getType() {
+		return ProductAdapter::TYPE_RAM;
+	}
 }

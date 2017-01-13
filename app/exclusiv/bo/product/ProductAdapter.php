@@ -6,18 +6,22 @@ use exclusiv\bo\Brand;
 use n2n\persistence\orm\annotation\AnnoInheritance;
 use n2n\persistence\orm\annotation\AnnoManagedFile;
 use n2n\persistence\orm\annotation\AnnoManyToOne;
-use n2n\persistence\orm\annotation\AnnoMappedSuperclass;
 use n2n\persistence\orm\InheritanceType;
 use n2n\reflection\annotation\AnnoInit;
 use n2n\reflection\ObjectAdapter;
 
-class ProductAdapter extends ObjectAdapter implements Product {
+abstract class ProductAdapter extends ObjectAdapter implements Product {
 	private static function _annos(AnnoInit $ai) {
 		$ai->c(new AnnoInheritance(InheritanceType::JOINED));
 		
 		$ai->p('image', new AnnoManagedFile());
 		$ai->p('brand', new AnnoManyToOne(Brand::getClass()));
 	}
+	
+	const TYPE_CPU = 'cpu';
+	const TYPE_GPU = 'gpu';
+	const TYPE_RAM = 'ram';
+	const TYPE_MOTHERBOARD = 'motherboard';
 	
 	protected $id;
 	protected $name;
@@ -94,4 +98,11 @@ class ProductAdapter extends ObjectAdapter implements Product {
 	public function setImage($image) {
 		$this->image = $image;
 	}
+	
+	
+	public static function getTypes() {
+		return array(self::TYPE_RAM, self::TYPE_GPU, self::TYPE_CPU, self::TYPE_MOTHERBOARD);
+	}
+	
+	public abstract function getType();
 }

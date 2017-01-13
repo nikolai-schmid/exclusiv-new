@@ -24,4 +24,8 @@ class CPU extends ProductAdapter {
     public function setCpuSocket(CpuSocket $cpuSocket) {
         $this->cpuSocket = $cpuSocket;
     }
+    
+    public function getType() {
+	    return ProductAdapter::TYPE_CPU;
+    }
 }

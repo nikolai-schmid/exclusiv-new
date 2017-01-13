@@ -67,3 +67,14 @@
 2017-01-11T19:39:04+01:00 [n2n\core\err\ExceptionHandler] Error: Call to a member function getClass() on null in D:\htdocs\nikolai\phpstorm\exclusiv-new\vendor\n2n\n2n-persistence\src\app\n2n\persistence\orm\model\EntityModelFactory.php on line 117
 2017-01-11T19:40:18+01:00 [n2n\core\err\ExceptionHandler] n2n\persistence\orm\OrmErrorException: exclusiv\bo\Brand::$cpus is annotated with invalid target entity class. in D:\htdocs\nikolai\phpstorm\exclusiv-new\app\exclusiv\bo\Brand.php on line 15
 2017-01-11T19:43:25+01:00 [n2n\core\err\ExceptionHandler] n2n\util\config\InvalidConfigurationException: EiSpec required for exclusiv\bo\product\ProductAdapter
+2017-01-13T19:11:43+01:00 [n2n\core\err\ExceptionHandler] n2n\util\config\InvalidConfigurationException: EiSpec required for exclusiv\bo\product\ProductAdapter
+2017-01-13T19:13:53+01:00 [n2n\core\err\ExceptionHandler] rocket\spec\config\InvalidMenuItemConfigurationException: MenuItem with following id invalid configured: exclusiv-motherboard
+2017-01-13T19:14:16+01:00 [n2n\core\err\ExceptionHandler] rocket\spec\config\InvalidMenuItemConfigurationException: MenuItem with following id invalid configured: exclusiv-motherboard
+2017-01-13T19:14:55+01:00 [n2n\core\err\ExceptionHandler] rocket\spec\config\InvalidMenuItemConfigurationException: MenuItem with following id invalid configured: exclusiv-cpu
+2017-01-13T19:15:33+01:00 [n2n\core\err\ExceptionHandler] rocket\spec\config\InvalidMenuItemConfigurationException: MenuItem with following id invalid configured: exclusiv-cpu
+2017-01-13T19:15:55+01:00 [n2n\core\err\ExceptionHandler] rocket\spec\config\InvalidMenuItemConfigurationException: MenuItem with following id invalid configured: exclusiv-ram
+2017-01-13T19:16:07+01:00 [n2n\core\err\ExceptionHandler] rocket\spec\config\InvalidMenuItemConfigurationException: MenuItem with following id invalid configured: exclusiv-ram
+2017-01-13T19:16:16+01:00 [n2n\core\err\ExceptionHandler] rocket\spec\config\InvalidMenuItemConfigurationException: MenuItem with following id invalid configured: exclusiv-ram
+2017-01-13T20:04:07+01:00 [n2n\core\err\ExceptionHandler] hangar\entity\model\ex\SpecCreationException: Existing Spec for template\controller\ProductPageController available.
+2017-01-13T20:07:04+01:00 [n2n\core\err\ExceptionHandler] hangar\entity\model\ex\SpecCreationException: Existing Spec for template\controller\ProductPageController available.
+2017-01-13T20:07:54+01:00 [n2n\core\err\ExceptionHandler] hangar\entity\model\ex\SpecCreationException: Existing Spec for template\controller\ProductPageController available.
