@@ -273,12 +273,11 @@ a {
 }
 
 #pay-with-paypal{
-	margin-left:10px;textSearch
+	margin-left:10px;
 	margin-top: 10px;
 }
 
 .productDescription {
-	white-space:wrap;
 	overflow:hidden;
 	float:left;
 	margin-top:9px;
@@ -564,3 +563,23 @@ form {
 	min-height: 100%;
 }
 
+.prodcut-overview-item {
+	position: relative;
+	background: white;
+	margin: 10px;
+	height: 250px;
+	width: 250px;
+}
+
+.prodcut-overview-item img {
+	margin: 20px;
+}
+
+.prodcut-overview-item h3 {
+ position: absolute;
+ bottom: 10px;
+}
+
+.prodcut-overview-item a {
+	color: #333333;
+}

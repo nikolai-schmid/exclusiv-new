@@ -145,7 +145,6 @@ class PageHtmlBuilder {
 	 * @return \n2n\web\ui\UiComponent
 	 */
 	public function getBreadcrumbs(array $attrs = null, array $liAttrs = null, array $aAttrs = null, $divider = null) {
-		$navBranches = $this->meta->getBreadcrumbs();
 		if (empty($navBranches)) return null;
 		
 		$html = $this->view->getHtmlBuilder();

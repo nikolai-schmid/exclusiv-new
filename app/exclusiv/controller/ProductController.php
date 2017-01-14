@@ -3,6 +3,7 @@ namespace exclusiv\controller;
 
 use n2n\web\http\controller\ControllerAdapter;
 use exclusiv\model\dao\ProductDao;
+use n2n\web\http\PageNotFoundException;
 
 class ProductController extends ControllerAdapter {
 	private $productDao;
@@ -17,6 +18,16 @@ class ProductController extends ControllerAdapter {
 	}
 	
 	public function index() {
-		$this->forward('..\view\product.html');
+		$products = $this->productDao->getProductsOfType($this->type);
+		$this->forward('..\..\template\view\product-type.html', array('products' => $products));
+	}
+	
+	public function detail(string $pathPart) {
+		$product = $this->productDao->getProductByPathPart();
+		if ($product === null) {
+			throw new PageNotFoundException();
+		}
+		
+		$this->forward('..\..\template\view\product-detail.html', array('product' => $product));
 	}
 }

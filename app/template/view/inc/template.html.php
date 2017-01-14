@@ -1,5 +1,14 @@
 <?php
-$html->meta()->addCss("assets/css/hanshel.css");
+    $html->meta()->addjs("js/jquery-2.1.4.min.js");
+    $html->meta()->addjs("js/bootstrap.min.js");
+    $html->meta()->addjs("js/search.min.js");
+    $html->meta()->addjs("js/shoppingCart.min.js");
+    $html->meta()->addjs("js/hanshel.min.js");
+    $html->meta()->addCss("css/bootstrap_3.3.7/bootstrap-theme.min.css");
+    $html->meta()->addCss("css/bootstrap_3.3.7/bootstrap.min.css");
+    $html->meta()->addCss("css/hanshel.css");
+    
+    $pageHtml = new \page\ui\PageHtmlBuilder($view);
 ?>
 <html>
 <?php $html->headStart()?>
@@ -25,18 +34,13 @@ $html->meta()->addCss("assets/css/hanshel.css");
 				
 				<div id="navbar" class="col-xs-12">
 					<div id="nav-links" class="collapse">
-						<ul class="nav navbar-nav navbar-right">
-							<li role="presentation"><?php $html->linkToContext('', $html->getText('home_text')) ?></li>
-							<li role="presentation"><?php $html->linkToContext(array('product'), $html->getText('product_text'))?></li>
-							<li role="presentation"><?php $html->linkToContext(array('about'), $html->getText('about_text'))?></li>
-							<li role="presentation"><?php $html->linkToContext(array('login'), $html->getText('login_text'))?></li>
-							<li role="presentation"><?php $html->linkToContext(array('register'), $html->getText('register_text'))?></li>
-						</ul>
+						<?php $pageHtml->navigation() ?>
 					</div>
 				</div>
 			</nav>
 		</div>
 	</header>
+	<?php $pageHtml->breadcrumbs() ?>
 	<div class="container">
 		<div id="content">
 			<?php $view->importContentView() ?>
